@@ -14,7 +14,7 @@ Descargue este proyecto para iniciar una implementación
 	  	<name>platkmframework repository</name>
 	  	<url>https://nexus.platkmframework.io/repository/platkmframework-public/</url>
 	</mirror> 
- 
+``` 
 
 2- adicione un active profile para platmframework
 
@@ -26,7 +26,7 @@ Descargue este proyecto para iniciar una implementación
 
 
 3- adicione un profile para platkmframework
-
+```
 	<profile>
 		<id>platkmframework</id> 
 	  	<activation>
@@ -42,5 +42,5 @@ Descargue este proyecto para iniciar una implementación
 	    	</repository>
 	  	</repositories>
 	</profile>
- 
+``` 
  
