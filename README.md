@@ -38,7 +38,6 @@ Descargue este proyecto para iniciar una implementación
 	      		<name>Repository platkframework</name>
 	      		<url>https://nexus.platkmframework.io/repository/platkmframework-public</url>
 	      		<layout>default</layout>
-	      		<snapshotPolicy>always</snapshotPolicy>
 	    	</repository>
 	  	</repositories>
 	</profile>
