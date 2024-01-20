@@ -5,9 +5,13 @@ import org.platkmframework.annotation.ClassMethod;
 import org.platkmframework.annotation.HttpRequestMethod;
 import org.platkmframework.annotation.RequestBody;
 import org.platkmframework.annotation.RequestParam;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Api(path = "/person", description = "Example APIs")
 public class PersonController {
+	
+	private static Logger logger = LoggerFactory.getLogger(PersonController.class);
 
 	public PersonController() {
 		super();
@@ -29,7 +33,7 @@ public class PersonController {
 	
 	@ClassMethod(name = "/create", method = HttpRequestMethod.POST)
 	public void crearPersona(@RequestBody() Person person ) {
-		System.out.print(person.getName() + " - " + person.getLastname());
+		logger.info("Nombre de la persona : {}", person.getName() + " " + person.getLastname()); 
 	}
 
 }
