@@ -74,3 +74,13 @@ export const WebSocketExample = () =>{
     )
 }
 ```
+
+5- server example
+```
+WebSocketServerMessage
+```
+
+6- java client example
+```
+MainWebSocketClientExample
+```
