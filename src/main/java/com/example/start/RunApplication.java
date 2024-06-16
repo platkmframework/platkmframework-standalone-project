@@ -19,6 +19,7 @@ public class RunApplication {
 								  webSocketPort("8082"). // change it with your server port
 								  corsOrigin("http://localhost:5173").
 		                          corsMethod("GET,POST,PUT,DELETE,OPTIONS").
+		                          add("ptest", "6").
 		                          IvD("com.example"); // change it with the package path, where you want IvD takes care. Example "com.example,com.controllers"
 		
 		PlatkmFrameworkApplication.start(args);

@@ -3,6 +3,7 @@ package com.example.controller;
 import org.platkmframework.annotation.Api;
 import org.platkmframework.annotation.ClassMethod;
 import org.platkmframework.annotation.HttpRequestMethod;
+import org.platkmframework.annotation.PropertyFileInfo;
 import org.platkmframework.annotation.RequestBody;
 import org.platkmframework.annotation.RequestParam;
 import org.slf4j.Logger;
@@ -12,6 +13,9 @@ import org.slf4j.LoggerFactory;
 public class PersonController {
 	
 	private static Logger logger = LoggerFactory.getLogger(PersonController.class);
+	
+	@PropertyFileInfo(name = "ptest")
+	private long miValue;
 
 	public PersonController() {
 		super();
