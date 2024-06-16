@@ -1,0 +1,23 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+    version="1.0">
+
+    <persistence-unit name="example_persistence_unit" transaction-type="RESOURCE_LOCAL" > 
+     	<provider>org.platkmframework.jpa.orm.provider.PlatkmORMPersistenceProvider</provider>
+        <properties>
+			<property name="javax.persistence.jdbc.url" value="...your jdbc url...."/>
+			<property name="javax.persistence.jdbc.password" value="...your password..."/>
+			<property name="javax.persistence.jdbc.user" value="...your database user ..."/>
+			<property name="javax.persistence.jdbc.driver" value="... your jdbc driver ...."/>
+			<property name="javax.persistence.jdbc.auto.commit"  value="false"/>
+			<property name="javax.persistence.jdbc.default.auto.commit" value="false"/>   	 	
+			<property name="org.platkmframework.format.date.time" value="yyyy-MM-dd-HH.mm.ss"/>   
+			<property name="org.platkmframework.format.date" value="yyyy-MM-dd"/>  
+			<property name="org.platkmframework.format.time" value="HH.mm.ss"/> 
+			<property name="org.platkmframework.jpa.show.sql" value="true"/>  
+        </properties>
+    </persistence-unit>
+    
+</persistence>

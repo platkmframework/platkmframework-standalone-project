@@ -14,11 +14,16 @@ public class RunApplication {
 		logger.info("Starting..");
 		ProjectContent.instance().projectName("Example"). //change it with your project name
 								  server("localhost"). // change it with your server name or ip
+								  port("8080"). // change it with your server port
 								  servletPath("/example"). // path for end point
-		                          port("8080"). // change it with your server port
+								  webSocketPort("8082"). // change it with your server port
+								  corsOrigin("http://localhost:5173").
+		                          corsMethod("GET,POST,PUT,DELETE,OPTIONS").
 		                          IvD("com.example"); // change it with the package path, where you want IvD takes care. Example "com.example,com.controllers"
 		
 		PlatkmFrameworkApplication.start(args);
+		
+		
 	}
 
 }
