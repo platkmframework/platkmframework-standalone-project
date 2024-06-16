@@ -42,4 +42,35 @@ Descargue este proyecto para iniciar una implementación
 	  	</repositories>
 	</profile>
 ``` 
- 
+
+4- websocket client react
+```
+export const WebSocketExample = () =>{
+
+    const socketUrl = 'ws://<server>/<topic>';
+     
+    useEffect(() => {
+        const ws = new WebSocket(socketUrl)
+
+        ws.onmessage = (ev) => {
+            console.log(ev.data)
+        }
+
+        ws.onclose = (ev) => {
+            console.log(ev)
+        }
+
+        ws.onerror = (ev) => {
+            console.log(ev)
+        }
+        
+
+      }, [])
+
+    return (
+        <>
+                  
+        </>
+    )
+}
+```
