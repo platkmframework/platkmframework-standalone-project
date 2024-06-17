@@ -45,6 +45,10 @@ Descargue este proyecto para iniciar una implementación
 
 4- websocket client react
 ```
+REACT
+add react-use-websocket
+
+
 export const WebSocketExample = () =>{
 
     const socketUrl = 'ws://<server>/<topic>';
